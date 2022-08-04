@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/login.css')}}">
+</head>
+<body>
+  <style>
+      body {
+        background-image: url("static/css/mintt.jpg");
+        background-size: cover;
+        background-position: top center;
+}
+
+
+</style>
+
+    <form method="post" action="/signup">
+
+
+              <!-- Heading -->
+              <h1 style="color: white;">
+                Create an account
+              </h1>
+
+              <!-- Subheading -->
+              <p style="color:white;" >
+                Please fill up your information below to sign up.
+              </p>
+
+             
+
+                
+                <label style="color:orange">--Email address*</label>
+                <div class= 'input-group'>
+                  <input type="email"  name="email" id="emailStr" required>
+                  <div >
+
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Password -->
+              <div >
+
+                <!-- Name -->
+                <label style="color:orange">Password*</label>
+                <div class="input-group">
+                  <input type="password"  name="password" minlength="6">
+                  <div>
+
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Footer -->
+              <div >
+
+                <div >
+
+                  <!-- Button -->
+                  <div >
+                     <button type="submit" class="btn">signup</button>
+                  </div>
+
+                </div>
+              </div> <!-- / .form-row -->
+              <!-- Link -->
+
+              </div>
+    </form>
+    
+        
+</body>
+</html>
