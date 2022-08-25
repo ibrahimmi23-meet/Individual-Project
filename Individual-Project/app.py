@@ -24,7 +24,7 @@ config = {
 firebase =pyrebase.initialize_app(config)
 auth = firebase.auth()
 db = firebase.database()
-
+ 
 @app.route('/', methods=['GET', 'POST' ])
 def home():
     return render_template("home.html")
@@ -39,7 +39,7 @@ def main():
         if user == login_session['user']['localId']:
             yop = users[user]['email']
             print(user, 'user') 
-            return render_template('main.html' , new_user = yop)
+            return render_template('main.html' , yop = yop)
         
     return render_template('home.html')    
 
@@ -93,6 +93,17 @@ def login():
 @app.route('/ment')
 def ment():
     return render_template ('ment.html')
+
+
+@app.route('/cucumber')
+def cucumber():
+    return render_template ('cucumber.html')
+
+
+
+@app.route('/shiri')
+def shiri():
+    return render_template ('shiri.html')
 
 
 @app.route("/add_info", methods=["GET", "POST"])
