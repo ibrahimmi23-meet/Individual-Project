@@ -90,7 +90,7 @@ def login():
 
 
 
-@app.route('/ment')
+@app.route('/ment' , methods= [ 'GET' , 'POST' ])
 def ment():
     return render_template ('ment.html')
 
@@ -104,6 +104,14 @@ def cucumber():
 @app.route('/shiri')
 def shiri():
     return render_template ('shiri.html')
+
+
+
+@app.route('/meat')
+def meat():
+    return render_template ('meat.html')
+
+
 
 
 @app.route("/add_info", methods=["GET", "POST"])
