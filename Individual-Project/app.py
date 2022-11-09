@@ -90,7 +90,7 @@ def login():
 
 
 
-@app.route('/ment' , methods= [ 'GET' , 'POST' ])
+@app.route('/ment' , methods= [ 'GET' , 'POST'])
 def ment():
     return render_template ('ment.html')
 
@@ -107,14 +107,14 @@ def shiri():
 
 
 
-@app.route('/meat')
+@app.route('/meat' , methods=['GET', 'POST'])
 def meat():
     return render_template ('meat.html')
 
 
 
 
-@app.route("/add_info", methods=["GET", "POST"])
+@app.route("/add_info" , methods=["GET", "POST"])
 def plants():
     if request.method == 'POST':
        name = request.form['name']

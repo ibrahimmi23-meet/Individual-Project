@@ -5,16 +5,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
+  font-family: Arial, Helvetica, sans-serif;
           background-image: url("static/css/mintt.jpg");
         background-size: cover;
         background-position: top center;
-}
-  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
 }
 
 .navbar a {
@@ -43,7 +42,7 @@ body {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: cadetblue;
+  background-color: red;
 }
 
 .dropdown-content {
@@ -73,12 +72,12 @@ body {
 }
 </style>
 </head>
-<body>
 
+<body>
 <div class="navbar">
   <a href="{{url_for('home')}}">Home</a>
   <a href="{{url_for('login')}}">LOG OUT</a>
-  <a herf="{{url_for('meat')}}">New Taste</a>
+  <a href="{{url_for('meat')}}">New Taste</a>
   <div class="dropdown">
     <button class="dropbtn">Dropdown 
       <i class="fa fa-caret-down"></i>
@@ -88,12 +87,10 @@ body {
       <a href="{{url_for('cucumber')}}">cucmber</a>
       <a href="{{url_for('shiri')}}">shiri</a>
     </div>
+    
   </div> 
 </div>
-
-
 <h1 style="color : white;" >hello and welcome {{yop}} </h1>
-
 
 
 </body>
